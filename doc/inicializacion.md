@@ -7,7 +7,7 @@ Se va a explicar los pasos seguidos para la creación del repositorio del proyec
   * Pimero creamos la clave pública como se indica en la documentación de [github](https://docs.github.com/es/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
   * Después creamos la clave pública en github accediendo a settings -> ssh and GPG keys -> new ssh key.
 
-  ![Ir a settingss](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSettings.PNG)
+  ![Ir a settings](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/goSettings.PNG)
 
   ![Ir a SSH and GPG keys](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSSH.PNG)
 
