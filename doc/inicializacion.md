@@ -7,13 +7,13 @@ Se va a explicar los pasos seguidos para la creación del repositorio del proyec
   * Pimero creamos la clave pública como se indica en la documentación de [github](https://docs.github.com/es/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
   * Después creamos la clave pública en github accediendo a settings -> ssh and GPG keys -> new ssh key.
 
-  ![Ir a settingss](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSettings.PNG "Ir a settings")
+  ![Ir a settingss](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSettings.PNG)
 
-  ![Ir a SSH and GPG keys](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSSH.PNG "Ir a SSH and GPG keys")
+  ![Ir a SSH and GPG keys](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/goSSH.PNG)
 
   * Copiamos la clave pública creada en linux y acceptamos.
 
-  ![Clave creada](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/keyCreada.PNG "Clave creada")
+  ![Clave creada](https://github.com/CharlySM/ProyectoCC/tree/master/doc/img/keyCreada.PNG)
 
 # 3. Configuración correcta del nombre y correo electrónico para que aparezca en los commits.
   Agregamos la dirección de correo electrónico para que aparezca en commits como se indica en la dcumentación de [github](https://docs.github.com/es/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address)
