@@ -8,4 +8,4 @@ Este proyecto se hace por interés personal, con el objetivo de mejorar en el us
 
 Los datos usados para este aplicación se extraen de un dataset de kaggle llamado [La Liga Complete Dataset](https://www.kaggle.com/kishan305/la-liga-results-19952020)
 
-Enlace para documentación de configuración de directorio: ![Configuración de repositorio](https://github.com/CharlySM/ProyectoCC/doc "configuración de repositorio")
+Enlace para documentación de configuración de directorio: (https://github.com/CharlySM/ProyectoCC/doc "configuración de repositorio")
