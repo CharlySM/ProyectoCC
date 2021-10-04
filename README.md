@@ -1,7 +1,7 @@
 # Spain Football Statistic
 Repositorio para la asignatura de Cloud Computing del curso 2020-2021 del máster de ingeniería informatica de la UGR.
 
-Enlace para documentación de configuración de directorio:[Documentación](https://github.com/CharlySM/ProyectoCC/doc "configuración de repositorio")
+Enlace para documentación de configuración de directorio: [Documentación](https://github.com/CharlySM/ProyectoCC/doc "configuración de repositorio")
 
 ## Descripción
 En este curso de cloud computing se va a realizar una aplicación donde se puedan ver estadísticas sobre un equipo de fútbol de la liga española de primera división. Además de poder hacer una predicción sobre el enfrentamiento entre dos clubes elegidos según la forma mostrada por los clubes en los últimos partidos.
