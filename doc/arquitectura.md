@@ -16,4 +16,4 @@ Como se ha descrito antes en la app va a haber 3 microservicios.
 
 ### Diagrama de arquitectura de la aplicación.
 
-![](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/diagrama.PNG)
+![]((https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/diagrama.png)
