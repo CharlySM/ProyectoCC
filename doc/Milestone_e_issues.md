@@ -1,0 +1,7 @@
+* [Milestone 0](https://github.com/CharlySM/ProyectoCC/milestone/1)
+    * [Issue 1](https://github.com/CharlySM/ProyectoCC/issues/1)
+    * [Issue 2](https://github.com/CharlySM/ProyectoCC/issues/2)
+    * [Issue 3](https://github.com/CharlySM/ProyectoCC/issues/3)
+    * [Issue 4](https://github.com/CharlySM/ProyectoCC/issues/4)
+    * [Issue 5](https://github.com/CharlySM/ProyectoCC/issues/5)
+    * [Issue 6](https://github.com/CharlySM/ProyectoCC/issues/6)

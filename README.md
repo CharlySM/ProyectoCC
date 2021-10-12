@@ -13,10 +13,4 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/tree/master/doc/arqui
 
 ## Milestone e issues.
 
-* [Milestone 0](https://github.com/CharlySM/ProyectoCC/milestone/1)
-    * [Issue 1](https://github.com/CharlySM/ProyectoCC/issues/1)
-    * [Issue 2](https://github.com/CharlySM/ProyectoCC/issues/2)
-    * [Issue 3](https://github.com/CharlySM/ProyectoCC/issues/3)
-    * [Issue 4](https://github.com/CharlySM/ProyectoCC/issues/4)
-    * [Issue 5](https://github.com/CharlySM/ProyectoCC/issues/5)
-    * [Issue 6](https://github.com/CharlySM/ProyectoCC/issues/6)
+En este apartado se describirá los milestone usados con los issues creados para cada milestone. Esto podemos verlo en el siguiente [documento](https://github.com/CharlySM/ProyectoCC/tree/master/doc/Milestone_e_issue.md)
