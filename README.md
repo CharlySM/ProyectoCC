@@ -18,3 +18,7 @@ En este apartado se describirá los milestone usados con los issues creados para
 ## Herramientas usadas.
 
 En este apartado se va a describir que herramientas se van a usar. Esto viene descrito en ese [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/herramientas.md)
+
+## Historias de usuario.
+
+En este [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/hus.md) se muestran las historias de usuario.
