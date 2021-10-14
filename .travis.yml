@@ -1,0 +1,10 @@
+language: ruby
+rbenv:
+  - 2.7.0p0
+before_install:
+  - gem install inspec
+  - gem install bundle
+  - bundle install
+
+script:
+ echo "no aplica todavía"
