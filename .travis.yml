@@ -1,6 +1,6 @@
 language: ruby
 rbenv:
-  - 2.7.0p0
+  - 2.7.2
 before_install:
   - gem install inspec
   - gem install bundle
