@@ -25,7 +25,7 @@ En este [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/hus.md) 
 
 ## Planificación.
 
-En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/planificacion.md) podemos ver la planificación de las historias de usuario y a que hito se ha agregado.
+En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/planificacion.md) podemos ver la planificación de las historias de usuario.
 
 ## Clases usadas.
 - Clase usuario, la cual se encuentra en el fichero [Usuario](https://github.com/CharlySM/ProyectoCC/blob/master/src/User.rb).
