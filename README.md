@@ -22,3 +22,7 @@ En este apartado se va a describir que herramientas se van a usar. Esto viene de
 ## Historias de usuario.
 
 En este [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/hus.md) se muestran las historias de usuario.
+
+## Planificación.
+
+En este [documento]() podemos ver la planificación de las historias de usuario y a que hito se ha agregado.
