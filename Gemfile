@@ -4,4 +4,4 @@ gem "sinatra"
 gem "io-console"
 gem "json"
 gem "yard"
-gem "mongo", '2.13.0'
+gem "mongo", '2.16.0'
