@@ -33,5 +33,7 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 ## Justificación Marco de pruebas, Biblioteca usada y elección de gestor de tareas.
 
 [Gestor de tareas.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionGestorTareas.md)
+
 [Marco de pruebas.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionMarcoPruebas.md)
+
 [Biblioteca usada.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionBiblioteca.md)
