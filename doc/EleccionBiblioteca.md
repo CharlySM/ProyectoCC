@@ -5,3 +5,5 @@ Para elegir nuestra libreria tenemos que hablar de estos dos frmaworks ya que us
 En segundo lugar vamos a hablar del framework Rspec, este framework usa la felxibilidad del lenguaje de ruby y además esta más orientado a la filosofía Behavior Driven Development, donde se describe el comportamiento de los componenetes de la app. La librería que usa es describe "descripcion del test" do it "describe funcionalidad" do test end.
 
 Para este proyecto he elegido el framework Test::unit::test_Case ya que para este framework ya tengo experiencia en realización de test en ruby y en la bibliotecas que usa de assert, que es la finalidad de este documento el explicar que librería se va a usar.
+
+Para el lenguaje R se va a usar la libería de R testthat que contiene la biblioteca de assert para realizar los test. Esto ha sido elegido asi para unificar los test y usar la misma biblioteca en ambos lenguajes.
