@@ -6,4 +6,4 @@ En segundo lugar vamos a hablar del framework Rspec, este framework usa la felxi
 
 Para este proyecto he elegido el framework Test::unit::test_Case ya que para este framework ya tengo experiencia en realización de test en ruby y en la bibliotecas que usa de assert, por lo tanto el marco de pruebas usado es el framework de la clase Test::unit:test_Case.
 
-Para el lenguaje R se va a usar la libería de R testthat que al contener la biblioteca de assert que vamos a usad para realizar los test es el marco de pruebas elegido. Ha sido elegido este marco ya que esta contenido en la web de [cran.r-project](https://cran.r-project.org/web/packages/testthat/index.html) que es oficial de R.
+Para el lenguaje R se va a usar la libería de R testthat que al contener la biblioteca de assert que vamos a usar para realizar los test es el marco de pruebas elegido. Ha sido elegido este marco ya que esta contenido en la web de [cran.r-project](https://cran.r-project.org/web/packages/testthat/index.html) que es oficial de R.
