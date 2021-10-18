@@ -1,2 +1,15 @@
 entidad:
  - src/User.rb
+ - src/Utils.rb
+
+test:
+ - test/User_test.rb
+ - test/Utils_test.rb
+
+lenguaje:
+ - ruby
+
+fichero_tareas:
+ - Rakefile
+
+make: rake
