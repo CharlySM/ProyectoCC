@@ -7,4 +7,4 @@ before_install:
   - bundle install
 
 script:
- echo "no aplica todavía"
+ - "bundle exec rake travis:run"
