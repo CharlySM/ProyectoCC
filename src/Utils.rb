@@ -11,8 +11,7 @@ class Utils
       return map
   end
 
-  def searchIntoJson(email, users)
-      key="email"
+  def searchIntoJson(key, email, users)
       esta=false
       users.each { |x|
         x.map{|k, v|

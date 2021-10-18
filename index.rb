@@ -24,18 +24,20 @@ end
 post '/registrado' do
   user=User.new(params[:nombre], params[:email], params[:password], params[:userName])
   valid=user.valid_email? ? true : false
-  esta=Utils.searchIntoJson(params[:email], Utils.getCollection(collection))
-  if valid and !esta
+  estaEmail=Utils.searchIntoJson("email", params[:email], Utils.getCollection(collection))
+  estaNameUser=Utils.searchIntoJson("user_name", params[:userName], Utils.getCollection(collection))
+
+  if valid and !estaEmail and !estaNameUser
     id=collection.count
     doc=user.params_to_doc(id+1)
     collection.insert_one(doc)
     redirect '/'
   else
-    redirect 'emailErroneo'
+    redirect 'registroErroneo'
   end
 end
 
-get '/emailErroneo' do
+get '/registroErroneo' do
     status 404
-    body "Email erroneo "
+    body "Email erroneo o nombre usuario repetido"
 end
