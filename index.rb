@@ -41,3 +41,28 @@ get '/registroErroneo' do
     status 404
     body "Email erroneo o nombre usuario repetido"
 end
+
+post '/login' do
+  erb :login
+end
+
+post '/logueando' do
+  user=User.new(params[:nombre], params[:email], params[:password], params[:userName])
+  valid=user.valid_email? ? true : false
+  estaEmail=Utils.searchIntoJson("email", params[:email], Utils.getCollection(collection))
+  estaPass=Utils.searchIntoJson("password", params[:password], Utils.getCollection(collection))
+  if valid and estaEmail and estaPass
+    redirect '/Principal'
+  else
+    redirect 'loginErroneo'
+  end
+end
+
+get '/loginErroneo' do
+    status 404
+    body "Email erroneo o password erronea"
+end
+
+get '/Principal' do
+  erb :principal
+end
