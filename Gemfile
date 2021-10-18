@@ -6,3 +6,4 @@ gem "json"
 gem "yard"
 gem "mongo", '2.16.0'
 gem 'rake'
+gem 'test-unit'
