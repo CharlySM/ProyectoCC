@@ -4,6 +4,7 @@ rbenv:
 before_install:
   - gem install inspec
   - gem install bundle
+  - gem install rake
   - bundle install
 
 script:
