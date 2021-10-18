@@ -1,6 +1,6 @@
 require "test/unit"
 require './src/User.rb'
-
+ 
 class TestEquipos < Test::Unit::TestCase
 
   def test_param_to_doc
@@ -17,7 +17,7 @@ class TestEquipos < Test::Unit::TestCase
 
   def test_validate_email
     user=User.new("Pepe", "test@email.com", "passwordprueba", "user1")
-    
+
     esperado=true
     valid=user.valid_email? ? true : false
 
