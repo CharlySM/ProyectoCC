@@ -1,4 +1,4 @@
-FROM alpine/bundle:2.4.2
+FROM alpine/bundle:latest
 
 WORKDIR /usr/src/app
 
