@@ -5,18 +5,18 @@ Para ejecutar nuestras pruebas en el contenedor docker se ha creado un fichero [
 ```
 FROM alpine/bundle:latest
 
+# Definimos etiquetas informativas al contenedor
+LABEL maintainer = "Carlos <csm89@correo.ugr.es>" \
+    org.opencontainers.image.source="https://github.com/CharlySM/ProyectoCC"
+
 WORKDIR /usr/src/app
 
-ADD ./src ./src
-ADD ./test ./test
-ADD ./views ./views
-COPY ./index.rb .
 COPY ./Gemfile .
 COPY ./Rakefile .
 
 RUN bundle install
 
-CMD ["rake"]
+CMD ["rake", "test"]
 ```
 
 Para que los test funcionen primero copiamos los directorios de nuestra aplicación en el directorio de trabajo. que son los comandos **ADD** del fichero [Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/Dockerfile). Después añadimos el fichero principal de la aplicación **index.rb**, luego copiamos el fichero **Rakefile** para poder ejecutar nuestros test y por último copiamos el fichero **Gemfile** el cuál contendra las gemas que tenemos que instalar para poder ejecutar nuestras pruebas.
