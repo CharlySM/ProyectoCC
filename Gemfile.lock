@@ -8,15 +8,19 @@ GEM
       bson (>= 4.8.2, < 5.0.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    power_assert (2.0.1)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rake (13.0.6)
     ruby2_keywords (0.0.5)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
+    test-unit (3.5.0)
+      power_assert
     tilt (2.0.10)
     yard (0.9.26)
 
@@ -27,7 +31,9 @@ DEPENDENCIES
   io-console
   json
   mongo (= 2.16.0)
+  rake
   sinatra
+  test-unit
   yard
 
 BUNDLED WITH
