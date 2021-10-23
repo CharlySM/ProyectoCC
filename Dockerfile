@@ -11,4 +11,4 @@ COPY ./Rakefile .
 
 RUN bundle install
 
-CMD ["rake"]
+CMD ["rake exec"]
