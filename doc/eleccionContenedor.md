@@ -21,20 +21,25 @@ CMD ["rake"]
 
 Para que los test funcionen primero copiamos los directorios de nuestra aplicación en el directorio de trabajo. que son los comandos **ADD** del fichero [Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/Dockerfile). Después añadimos el fichero principal de la aplicación **index.rb**, luego copiamos el fichero **Rakefile** para poder ejecutar nuestros test y por último copiamos el fichero **Gemfile** el cuál contendra las gemas que tenemos que instalar para poder ejecutar nuestras pruebas.
 
-Además de para hacer los test también se puede ejecutar nuestra aplicación, para ello se ha creado una nueva tarea en nuestro fichero [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile) para poder ejecutar nuestra tarea, de esta forma podemos ejecutar dos tareas desde nuestro [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile), la tarea test y la tarea exec. Con la primera tarea ejecutamos nuestros tests y con la segunda ejecutamos nuestra aplicación.
+Además de para hacer los test también se puede ejecutar nuestra aplicación, para ello se ha creado una nueva tarea en nuestro fichero [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile) para poder ejecutar nuestra tarea, de esta forma podemos ejecutar dos tareas desde nuestro [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile), la tarea test y la tarea exec. Con la primera tarea ejecutamos nuestros tests y con la segunda ejecutamos nuestra aplicación. Nuestra aplicación esta configurada para que se ejecute por defecto en el puerto 80 del contenedor os sistema en el que se lance.
 
 Para crear nuestra imagen lanzaremos el comando.
+
 ```
 sudo docker build -t proyecto .
 ```
+
 Donde proyecto es el nombre del contenedor que se ha creado.
-Una vez creada nuestra imagen, esta también contendrá las gemas que necesitamos instaladas, ya que al ejecutar el comando anterior se ejecuta también el comando
+Una vez creada nuestra imagen, esta también contendrá las gemas que necesitamos instaladas, ya que al ejecutar el comando anterior se ejecuta también el comando.
+
 ```
 bundle install
 ```
+
 Este comando instalará todas las gemas que necesitamos para ejecutar nuestras tareas. Luego ponemos que cuando ejecutemos el contenido del contenedor se ejecute el comando ```rake```. Este comando lanzará el gestor de tareas que es el fichero de configuración **Rakefile**.
 
 Para ejeceutar el contenido de nuestro contenedor ejecutamos el comando.
+
 ```
 sudo docker run --rm proyecto
 ```
