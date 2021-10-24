@@ -7,8 +7,9 @@ LABEL maintainer = "Carlos <csm89@correo.ugr.es>" \
 WORKDIR /usr/src/app
 
 COPY ./Gemfile .
-COPY ./Rakefile .
 
-RUN bundle install
+RUN bundle install \
+  && rm Gemfile
+
 
 CMD ["rake", "test"]
