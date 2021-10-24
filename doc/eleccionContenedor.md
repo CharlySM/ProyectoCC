@@ -24,7 +24,7 @@ CMD ["rake", "test"]
 
 ```
 
-Para que los test funcionen primero copiamos el archivo para instalar nuestras gemas y poder ejecutar nuestros test, para ello usamos el comando **COPY**, después ejecutamos el comando ```bundle install``` para instalar nuestras gemas que necesitaremos para ejecutar nuestros tests. Después de isntalar las gemas borramos el fichero [Gemfile](https://github.com/CharlySM/ProyectoCC/blob/master/Gemfile) con el comando ```rm Gemfile```. Por último creamos el comando que se ejecutará al ejecutar nuestro contendor **rake test**, esto ejecutará los tests de la aplicación.
+Para que los test funcionen primero copiamos el archivo para instalar nuestras gemas y poder ejecutar nuestros test, para ello usamos el comando **COPY**, después ejecutamos el comando ```bundle install``` para instalar nuestras gemas que necesitaremos para ejecutar nuestros tests. Después de instalar las gemas borramos el fichero [Gemfile](https://github.com/CharlySM/ProyectoCC/blob/master/Gemfile) con el comando ```rm Gemfile```. Por último creamos el comando que se ejecutará al ejecutar nuestro contendor **rake test**, esto ejecutará los tests de la aplicación.
 
 Además de instalar las dependencias necesarias para ejecutar nuestros test también se crea el directorio de trabajo donde se ejecutarán nuestros test, para hacer esto se usa el comando **WORKDIR**, este comando crea el directorio de trabajo si no existe, si existe lo asigna como directorio de trabajo.
 
