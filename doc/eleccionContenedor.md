@@ -1,13 +1,38 @@
-Para esta aplicación se ha creado un contenedor dockerfile, con la imagen alpine/bundle. Se ha escogido una imagen alpine por que ocupa menos en memoria, y se ha seleccionado alpine/budle ya que esta imagen además de ser alpine y minimizar su tamaño tiene solo las herramientas necesarias para pasar nuestros tests. En este caso la herramienta principal es el lenguaje ruby y la gema bundle para poder instalar el resto de gemas desde el fichero Gemafile. Los tests son los realizados en entregas anteriores más otros que se añadirán en esta entrega.
+Para esta aplicación se ha creado un contenedor dockerfile, con la imagen ruby:2.7-alpine. Se ha escogido una imagen alpine por que ocupa menos en memoria, y se ha seleccionado alpine/budle ya que esta imagen además de ser alpine y minimizar su tamaño tiene solo las herramientas necesarias para pasar nuestros tests. En este caso la herramienta principal es el lenguaje ruby y la gema bundle para poder instalar el resto de gemas desde el fichero Gemafile. Los tests son los realizados en entregas anteriores más otros que se añadirán en esta entrega.
+
+Esta elección se ha hecho después de probar varias imágenes. Las imágenes probadas han sido **ubuntu:latest**, **ruby:2.7-alpine** y **alpine/bundle:latest**. Hemos comparado lo que ocupan en memoria las imágenes probadas, esto lo podemos ver en la siguiente imagen.
+![Imagenes docker](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/imagenesDocker.PNG)
+
+Podemos ver en imagen que la imagen docker que mas espacio ocupa en memoria es **alpine/bundle:latest** con 894MB de ocupación en memoria, después la imagen que más ocupa es **ubuntu:latest** que ocupa 432MB y finalmente la que menos ocupa de las tres es **ruby:2.7-alpine** con 275MB. Como podemos ver la diferencia entre la que más ocupa y la que menos es abismal siendo mas del doble la ocupación en memoria, en comparación con la imagen de ubuntu, la imagen de ubuntu casi dobla el espacio ocupado por la imagen de **ruby:2.7-alpine**. Por esta razón ha pesado más esta característica a la hora de tomar la decisión que otra.
+
+Viendo la diferencia de ocupación de las imágenes cabe pensar si es necesario mirar otra capacidad para elegir una imagen distinta ya que que ocupe menos es primordial. La cantidad de capas de una imagen puede aumentar la optimización en la construcción de la imagen. Vamos a ver las capas de las imágenes comparadas.
+
+Capas para **alpine/bundle:latest**.
+
+![alpine/bundle](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/capasAlpineBundle.PNG)
+
+Capas para **ubuntu:latest**.
+
+![ubuntu](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/capasUbuntu.PNG)
+
+Capas para **ruby:2.7-alpine**.
+
+![rubyAlpine](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/capasRubyAlpine.PNG)
+
+Podemos ver que la imagen con mas capas es **alpine/bundle:latest**, por lo que esta imagen la descartamos directamente. Ahora vemos que la imagen de **ubuntu:latest** tiene menos capas que la imagen **ruby:2.7-alpine**. Como hemos dicho antes las diferencia de ocupación de memoria vamos a primar esto por encima del número de capas. Por lo tanto nostros hemos elegido como se escribió al principio la imagen **ruby:2.7-alpine**.
 
 Para ejecutar nuestras pruebas en el contenedor docker se ha creado un fichero [Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/Dockerfile) donde se carga la imagen con nuestras herramientas para pasar los test, pero además tendremos que instalar una serie de gemas para que nuestros tests funcionen. Contenido fichero [Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/Dockerfile).
 
 ```
-FROM alpine/bundle:latest
+FROM ruby:2.7-alpine3.14
 
 # Definimos etiquetas informativas al contenedor
 LABEL maintainer = "Carlos <csm89@correo.ugr.es>" \
     org.opencontainers.image.source="https://github.com/CharlySM/ProyectoCC"
+
+RUN apk --update add --no-cache --virtual run-dependencies \
+      bash \
+      build-base
 
 #Añadimos directorio de trabajo si no existe se crea
 WORKDIR /app/test
@@ -21,6 +46,7 @@ RUN bundle install \
 
 #Añadimos comando de ejecucion de test
 CMD ["rake", "test"]
+
 
 ```
 
