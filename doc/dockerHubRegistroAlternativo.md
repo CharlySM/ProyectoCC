@@ -106,9 +106,9 @@ Se ha usado como registro de imagen alternativo github registry container, ya qu
 
 Para este proceso de automátización también se puede hacer ejecutando las órdenes como lo hariamos en nuestro sistema local poniendo la key **run** seguida del comando que se quiera usar, en vez de usar las tareas que están predefinidas en github.
 
-Referencias.
+## Referencias.
 - [Creación tokens](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - [Creación actions](https://docs.github.com/es/actions/publishing-packages/publishing-docker-images)
 - [Creación action con github registry](https://docs.github.com/es/actions/publishing-packages/publishing-docker-images#publishing-images-to-github-packages)
 - [Creación secret](https://docs.github.com/es/actions/security-guides/encrypted-secrets)
-- [registro contenedore](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+- [registro contenedores](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
