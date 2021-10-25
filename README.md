@@ -37,3 +37,11 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 [Marco de pruebas.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionMarcoPruebas.md)
 
 [Biblioteca usada.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionBiblioteca.md)
+
+## Justificación elección contenedor docker.
+
+[Elección contenedor](https://github.com/CharlySM/ProyectoCC/blob/master/doc/eleccionContenedor.md)
+
+## Registro en dockerhub y registro alternativo.
+
+[Registro en dockerhub y registro alternativo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
