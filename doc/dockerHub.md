@@ -1,1 +1,0 @@
-Para usar dockerhub lo primero que tenemos que hacer es darnos de alta en dockerhub, en mi caso ya tenía cuenta de la asignatura de infraestructura virtual del grado de ingeniería informática de la Universidad de Granada. También estaba agregada la cuenta de github en dockerhub por lo que nos queda crar el repositorio para el proyecto. 
