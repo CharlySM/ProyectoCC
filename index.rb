@@ -4,12 +4,14 @@ require 'io/console'
 require 'json'
 require './src/User'
 require './src/Utils'
+require './src/Equipo'
 
 set :bind, "0.0.0.0"
 set :port, 80
 
 client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 collection = client["users"]
+@data={}
 
 Utils=Utils.instance
 
@@ -64,5 +66,10 @@ get '/loginErroneo' do
 end
 
 get '/Principal' do
+  erb :principal
+end
+
+post '/equipoStatistics' do
+  @data = Equipo.new(Utils.getJson("./jsonTest/equipo.json"))
   erb :principal
 end

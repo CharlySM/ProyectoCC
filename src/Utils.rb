@@ -22,4 +22,13 @@ class Utils
         }
       return esta
   end
-end
+
+  def getJson(file)
+     map={}
+     if File.file?(file)
+       map=JSON.parse(IO.read(file))
+     end
+     return map
+   end
+
+ end
