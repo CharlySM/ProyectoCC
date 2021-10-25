@@ -1,5 +1,5 @@
 Para esta aplicación se ha creado un contenedor dockerfile, con la imagen ruby:2.7-alpine. Se ha escogido una imagen alpine por que ocupa menos en memoria, y se ha seleccionado alpine/budle ya que esta imagen además de ser alpine y minimizar su tamaño tiene solo las herramientas necesarias para pasar nuestros tests. En este caso la herramienta principal es el lenguaje ruby y la gema bundle para poder instalar el resto de gemas desde el fichero Gemafile. Los tests son los realizados en entregas anteriores más otros que se añadirán en esta entrega.
-
+ 
 Esta elección se ha hecho después de probar varias imágenes. Las imágenes probadas han sido **ubuntu:latest**, **ruby:2.7-alpine** y **alpine/bundle:latest**. Hemos comparado lo que ocupan en memoria las imágenes probadas, esto lo podemos ver en la siguiente imagen.
 
 ![Imagenes docker](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/imagenesDocker.png)
