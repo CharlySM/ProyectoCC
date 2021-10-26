@@ -40,5 +40,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: "latest"
+          tags: ${{ secrets.DOCKER_USERNAME }}/ProyectoCC:latest,${{ github.actor }}/ProyectoCC:latest
           labels: ${{ steps.meta.outputs.labels }}
