@@ -1,5 +1,5 @@
 require 'singleton'
-
+ 
 class Utils
 
   include Singleton
