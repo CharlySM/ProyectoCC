@@ -6,7 +6,7 @@ class TestEquipo < Test::Unit::TestCase
 
   def test_statisticToJson
 
-    mapIn={"equipo"=>{"ganados"=>12, "perdidos"=>5, "empatados"=>7}}
+    mapIn={"ganados"=>12, "perdidos"=>5, "empatados"=>7}
 
     equipo=Equipo.new(mapIn)
 
