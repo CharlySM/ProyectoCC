@@ -18,11 +18,13 @@
 					<input type="submit" name="equipoStatistics" value="equipoStatistics">
 		</form>
 
-<% if @data!=nil%>
-		<%@data.statistic.map do |k,v|%>
-								<p><%="#{k}:#{v}"%></p></<br>
-		<%end
-	end%>
+		<form class="" action="/manyStatistics" method="post">
+					<input type="submit" name="manyStatistics" value="manyStatistics">
+		</form>
+
+<%if @data!=nil%>
+		<p><%="#{@data}"%></p></<br>
+<%end%>
 
   </body>
 </html>

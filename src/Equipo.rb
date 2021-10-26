@@ -3,7 +3,7 @@ class Equipo
   attr_accessor :statistic
 
   def initialize(equipo)
-      @statistic=equipo["equipo"]
+      @statistic=equipo
     end
 
   def statisticToJson

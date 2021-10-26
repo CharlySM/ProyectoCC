@@ -11,7 +11,7 @@ set :port, 80
 
 client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 collection = client["users"]
-@data={}
+@data=" "
 
 Utils=Utils.instance
 
@@ -70,6 +70,16 @@ get '/Principal' do
 end
 
 post '/equipoStatistics' do
-  @data = Equipo.new(Utils.getJson("./jsonTest/equipo.json"))
+  @data = Equipo.new(Utils.getJson("./jsonTest/equipo.json")["equipo"]).statisticToJson
+  erb :principal
+end
+
+post '/manyStatistics' do
+  equipos=Utils.getJson("./jsonTest/prueba2.json")
+  aux=""
+  equipos.map do |k,v|
+    aux=aux+"#{k}:<br>"+"#{Equipo.new(v).statisticToJson}<br>"
+  end
+  @data=aux
   erb :principal
 end
