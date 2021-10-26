@@ -43,5 +43,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/proyectoc:latest,ghcr.io/${{ github.repository }}:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/proyectoc:latest,ghcr.io/charlysm/proyectocc:latest
           labels: ${{ steps.meta.outputs.labels }}
