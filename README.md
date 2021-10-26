@@ -44,4 +44,4 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 
 ## Registro en dockerhub y registro alternativo.
 
-[Registro en dockerhub y registro alternativo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
+[Registro imagen en dockerhub y github registry container.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
