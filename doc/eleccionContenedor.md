@@ -1,5 +1,5 @@
 Para esta aplicación se ha creado un contenedor dockerfile, con la imagen ruby:2.7-alpine. Se ha escogido una imagen alpine por que ocupa menos en memoria, y se ha seleccionado alpine/budle ya que esta imagen además de ser alpine y minimizar su tamaño tiene solo las herramientas necesarias para pasar nuestros tests. En este caso la herramienta principal es el lenguaje ruby y la gema bundle para poder instalar el resto de gemas desde el fichero Gemafile. Los tests son los realizados en entregas anteriores más otros que se añadirán en esta entrega.
-  
+
 Esta elección se ha hecho después de probar varias imágenes. Las imágenes probadas han sido **ubuntu:latest**, **ruby:2.7-alpine** y **alpine/bundle:latest**. Hemos comparado lo que ocupan en memoria las imágenes probadas, esto lo podemos ver en la siguiente imagen.
 
 ![Imagenes docker](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/imagenesDocker.png)
@@ -78,3 +78,5 @@ sudo docker run -v $(pwd):/app/test proyecto
 Esto copiará los archivos de nuestro directorio de la app a nuestro directorio de trabajo de docker. Después esto ejecutará nuestra tarea que lancemos desde el fichero [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile).
 
 El funcionamiento de la instalación y ejecución dentro del contenedor es similar a como se hace en el fichero [.travis.yml](https://github.com/CharlySM/ProyectoCC/blob/master/.travis.yml), pero aquí en el contenedor, con la imagen que usamos, ya viene con el lenguaje ruby instalado y la gema bundle, listos para poder usarse. El comando de ejecución **rake** también varia con respecto al comadno que se usa en el fichero de travis. En el contenedor se usa tal y como lo haríamos con una distribución de ubuntu que tenga las herramientas para poder ejecutarlo.
+
+Se ha cambiado la imagen de docker **ruby:2.7-alpine** por la imagen **ruby:3.0.2-alpine**, ya que se ve que la versión antigua ha dejado de tener acceso a algunas gemas, por lo tanto se ha cogido la versión mas actual. Los test y ejecuciones siguen funcionando igual no ha habido alteraciones en la programación de esto.
