@@ -1,4 +1,4 @@
-FROM ruby:2.7-alpine3.14
+FROM ruby:3.0.2-alpine3.14
 
 # Definimos etiquetas informativas al contenedor
 LABEL maintainer = "Carlos <csm89@correo.ugr.es>" \
