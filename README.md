@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/CharlySM/ProyectoCC.svg?branch=master)](https://app.travis-ci.com/CharlySM/ProyectoCC)
+
 # Spain Football Statistic
 Repositorio para la asignatura de Cloud Computing del curso 2020-2021 del máster de ingeniería informatica de la UGR.
 
