@@ -31,6 +31,8 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 
 ## Clases usadas.
 - Clase usuario, la cual se encuentra en el fichero [Usuario](https://github.com/CharlySM/ProyectoCC/blob/master/src/User.rb).
+- Clase utils, la cual se encuentra en el fichero [Utils](https://github.com/CharlySM/ProyectoCC/blob/master/src/Utils.rb).
+- Clase equipo, la cual se encuentra en el fichero [Equipo](https://github.com/CharlySM/ProyectoCC/blob/master/src/Equipo.rb).
 
 ## Justificación Marco de pruebas, Biblioteca usada y elección de gestor de tareas.
 
@@ -47,3 +49,7 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 ## Registro en dockerhub y registro alternativo.
 
 [Registro imagen en dockerhub y github registry container.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
+
+## Configuración travis.
+
+[Fichero explicación de configuración travis en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/travis.md)
