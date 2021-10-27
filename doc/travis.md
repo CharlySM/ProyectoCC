@@ -43,3 +43,5 @@ Para obtener el enlace del badge solo debemos pulsar en el badge build/passing q
 ![badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/badge.png)
 
 Resultado succed badge.
+
+![exit badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/exitbadge.png)
