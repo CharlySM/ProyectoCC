@@ -1,5 +1,5 @@
 require 'singleton'
- 
+
 class Utils
 
   include Singleton
@@ -29,6 +29,18 @@ class Utils
        map=JSON.parse(IO.read(file))
      end
      return map
+   end
+
+   def searchEmail(key, email, users)
+       user=nil
+       users.each { |x|
+         x.map{|k, v|
+           if(k == key and v == email)
+             user = x
+           end
+           }
+         }
+       return user
    end
 
  end

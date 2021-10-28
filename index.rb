@@ -11,7 +11,9 @@ set :port, 80
 
 client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 collection = client["users"]
+request = client["request"]
 @data=" "
+$user=
 
 Utils=Utils.instance
 
@@ -49,12 +51,19 @@ post '/login' do
 end
 
 post '/logueando' do
-  user=User.new(params[:nombre], params[:email], params[:password], params[:userName])
-  valid=user.valid_email? ? true : false
+  aux=Utils.searchEmail("email", params[:email], Utils.getCollection(collection))
   estaEmail=Utils.searchIntoJson("email", params[:email], Utils.getCollection(collection))
   estaPass=Utils.searchIntoJson("password", params[:password], Utils.getCollection(collection))
-  if valid and estaEmail and estaPass
+  puts aux
+  if estaEmail and estaPass
+    puts "dentro"
+    $user=User.new(aux["name"], aux["email"], aux["password"], aux["userName"])
+    valid=$user.valid_email? ? true : false
+    if valid
     redirect '/Principal'
+    else
+      redirect 'loginErroneo'
+    end
   else
     redirect 'loginErroneo'
   end
@@ -70,11 +79,17 @@ get '/Principal' do
 end
 
 post '/equipoStatistics' do
+  n=request.count
+  doc={_id:"#{n+1}","tipoRequest":"#{params[:tipoRequest]}","name":"#{$user.name}","email":"#{$user.email}","equipo1":"#{params[:equipo]}"}
+  request.insert_one(doc)
   @data = Equipo.new(Utils.getJson("./jsonTest/equipo.json")["equipo"]).statisticToJson
   erb :principal
 end
 
 post '/manyStatistics' do
+  n=request.count
+  doc={_id:"#{n+1}","tipoRequest":"#{params[:tipoRequest]}","name":"#{$user.name}","email":"#{$user.email}","equipo1":"#{params[:equipo1]}","equipo2":"#{params[:equipo2]}"}
+  request.insert_one(doc)
   equipos=Utils.getJson("./jsonTest/prueba2.json")
   aux=""
   equipos.map do |k,v|
