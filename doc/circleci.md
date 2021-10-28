@@ -25,3 +25,5 @@ Una vez hecho esto ya solo nos queda probar nuestra configuración de circleci h
 ![badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/badgeCircle.png)
 
 Como vemos nuestra ejecución de test en circleci con nuestra imagen de dockerhub ha sido exitosa.
+
+Circle ci esta usando nuestra imagen de dockehub creado en nuestro dockefile en el hito anterior que también usa nuestro fichero de gestor de tareas para ejecutar los test.

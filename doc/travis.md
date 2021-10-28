@@ -1,5 +1,5 @@
 Para la integración continua se ha escogido travis ya que es un sistema de integración continua muy usado y hay una gran cantidad de documentación además lo he usado otras veces y ya tengo cierta experiencia con el uso de travis, también se uso para la asignatura de de IV del grado de informáticas, por lo que la cuenta ya estaba añadida a travis también por todo esto mi elección de sistema de integración continua es travis.
- 
+
 Añadir travis al repositorio se hizo en los ejercicios del tema 2 para pasar los test por lo que vamos a poner el mismo procedemiento que se realizó en ese momento.
 
 Primero vamos a la página de travis nos logueamos con nuestra cuenta de github y aceptamos lo que nos pide travis para poder usarlo.
@@ -24,7 +24,7 @@ Nos llevará a una pagina de github con nuestra cuenta, donde primero selecciona
 
 ![added repo](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/newRepo.png)
 
-Comprobamos que nuestro [fichero de gestor](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile) de tareas tiene una tarea para poder ejecutar los tests.
+Comprobamos que nuestro [fichero de gestor de tareas](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile) tiene una tarea para poder ejecutar los tests.
 
 ![gestor tareas](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/gestorTareas.png)
 
@@ -47,3 +47,5 @@ Para obtener el enlace del badge solo debemos pulsar en el badge build/passing q
 Resultado succed badge.
 
 ![exit badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/exitBadge.png)
+
+Travis usa nuestro fichero de gestor de tareas para ejecutar los test.
