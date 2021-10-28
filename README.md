@@ -9,7 +9,7 @@ Enlace para documentación de configuración de directorio: [Documentación](htt
 
 ## Descripción
 
-La descripción del proyecto viene dada en este [documento](https://github.com/CharlySM/ProyectoCC/tree/master/doc/descripcion.md)
+La descripción del proyecto viene dada en este [documento.](https://github.com/CharlySM/ProyectoCC/tree/master/doc/descripcion.md)
 
 ## Arquitectura.
 
@@ -17,11 +17,11 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/tree/master/doc/arqui
 
 ## Milestone e issues.
 
-En este apartado se describirá los milestone usados con los issues creados para cada milestone. Esto podemos verlo en el siguiente [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/Milestone_e_issues.md)
+En este apartado se describirá los milestone usados con los issues creados para cada milestone. Esto podemos verlo en el siguiente [documento.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/Milestone_e_issues.md)
 
 ## Herramientas usadas.
 
-En este apartado se va a describir que herramientas se van a usar. Esto viene descrito en ese [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/herramientas.md)
+En este apartado se va a describir que herramientas se van a usar. Esto viene descrito en ese [enlace.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/herramientas.md)
 
 ## Historias de usuario.
 
@@ -52,6 +52,6 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 
 [Registro imagen en dockerhub y github registry container.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
 
-## Configuración travis.
+## Integración continua.
 
 [Fichero explicación de configuración travis en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/travis.md)
