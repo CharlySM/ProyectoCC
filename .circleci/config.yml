@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Logging into DockerHub
           command: |
-            echo "$DOCKER_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
+            echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
       # Running Tests using Docker
       - run:
           name: Running Tests using Docker
