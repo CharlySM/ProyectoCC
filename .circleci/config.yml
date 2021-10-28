@@ -1,0 +1,17 @@
+version: 1.0
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      # Loggin into DockerHub
+      - run:
+          name: Logging into DockerHub
+          command: |
+            echo "$DOCKER_PASSWORD" | docker login --username $DOCKERHUB_USERNAME --password-stdin
+      # Running Tests using Docker
+      - run:
+          name: Running Tests using Docker
+          command: |
+            docker run -t -v `pwd`:/app/test $DOCKER_USERNAME/proyectocc
