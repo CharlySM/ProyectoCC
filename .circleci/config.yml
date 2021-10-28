@@ -14,4 +14,4 @@ jobs:
       - run:
           name: Running Tests using Docker
           command: |
-            docker run -t -v `pwd`:/app/test $DOCKER_USERNAME/proyectocc
+            docker run -t -v `pwd`:/app/test $DOCKERHUB_USERNAME/proyectocc
