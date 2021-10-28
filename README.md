@@ -55,3 +55,5 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 ## Integración continua.
 
 [Fichero explicación de configuración travis en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/travis.md)
+
+[Fichero explicación de configuración circleci en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/circleci.md)

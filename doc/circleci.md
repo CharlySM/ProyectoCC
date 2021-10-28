@@ -22,6 +22,6 @@ Una vez hecho esto ya solo nos queda probar nuestra configuración de circleci h
 
 ![state 2](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/state2.png)
 
-![badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/bageCircle.png)
+![badge](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/badgeCircle.png)
 
 Como vemos nuestra ejecución de test en circleci con nuestra imagen de dockerhub ha sido exitosa.
