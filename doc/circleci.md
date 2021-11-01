@@ -1,3 +1,8 @@
+---
+layout: default
+title: Circle ci
+---
+
 Para el sistema de integración continua alternativo se ha elegido circleci, se ha elegido este por su parecido a travis y por la facilidad de uso y aprendizaje a la hora de usarlo. Además hay mucha documentación para usar circleci.
 
 Para este sistema de integración se va a usar también con nuestro contenedor de dockerhub creado desde nuestro dockerfile en el hito anterior.

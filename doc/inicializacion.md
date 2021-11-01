@@ -1,3 +1,8 @@
+---
+layout: default
+title: Inicializacion
+---
+
 Se va a explicar los pasos seguidos para la creación del repositorio del proyecto.
 
 # 1. Descarga de Git

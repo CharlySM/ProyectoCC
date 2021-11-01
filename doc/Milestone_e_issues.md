@@ -1,3 +1,8 @@
+---
+layout: default
+title: Milestone e issues
+---
+
 * [Milestone 0](https://github.com/CharlySM/ProyectoCC/milestone/1)
     * [Issue 1](https://github.com/CharlySM/ProyectoCC/issues/1)
     * [Issue 2](https://github.com/CharlySM/ProyectoCC/issues/2)

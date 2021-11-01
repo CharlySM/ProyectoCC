@@ -1,3 +1,8 @@
+---
+layout: default
+title: Arquitectura
+---
+
 La arquitectura que se va a usar para el proyecto es la arquitectura de microservicios. Donde habrá tres microservicios:
 
 1. Un microservicio entrenará un modelo para hacer las predicciones.

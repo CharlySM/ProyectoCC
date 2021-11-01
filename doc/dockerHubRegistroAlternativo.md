@@ -1,3 +1,8 @@
+---
+layout: default
+title: Dockerhub y registro alternativo
+---
+
 En este fichero lo que hemos hecho es definir la automatización de la actualización de la imagen en dockerhub y github registry container.
 
 Para usar dockerhub lo primero que tenemos que hacer es darnos de alta en dockerhub, en mi caso ya tenía cuenta de la asignatura de infraestructura virtual del grado de ingeniería informática de la Universidad de Granada. Como no podía linkar mi cuenta de github a mi cuenta de docker para la automatización de la actualización de la imagen se ha usado un github actions, donde al hacer push a nuestro repositorio se actualizará directamente en dockerhub. Además aprovechando la creación del actions para actualizar la imagen en dockerhub se va a utilizar este action creado en github para crear la imagen en github registry container y que esta se actualice también automáticamente.
