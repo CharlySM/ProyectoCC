@@ -56,7 +56,6 @@ post '/logueando' do
   estaPass=Utils.searchIntoJson("password", params[:password], Utils.getCollection(collection))
   puts aux
   if estaEmail and estaPass
-    puts "dentro"
     $user=User.new(aux["name"], aux["email"], aux["password"], aux["userName"])
     valid=$user.valid_email? ? true : false
     if valid
