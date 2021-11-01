@@ -1,0 +1,9 @@
+En un pricipio lo que se ha hecho ha sido investigar sobre los frameworks que se pueden usar en ruby para desarrollar un microservicio con un api rest. Se ha podido ver que los frameworks mas extendidos en conocimiento y documentación son **Ruby on Rails** y la gema **sinatra**. De estos dos el más usado es ruby on rails además del que mejor valoración tiene. La diferencia con sinatra es que sinatra es más ligero y sencillo a la hora de desarrollar que ruby on rails.
+
+Los dos framworks los conozco bien, pero conozco mejor sinatra, además que sinatra se uso en la asignatura de Infraestructura virtual del grado de informática de la Universidad de Granada, por lo que se tiene más experiencia desarrollando con sinatra, también he desarrollado algún proyecto personal con la gema seinatra.
+
+El conocimiento que tengo del uso de ruby on rails, esta justificado en un curso que se realizó por la empresa Nazaries IT, donde se desarrollo un poco de ruby on rails y para el desarrollo del trabajo fin de grado del grado en informática de la Universidad de Granada, en el marco de UGRASP llevado por el departamento de Arquitectura de computadores de la Universidad de Granada.
+
+Para la elección como se tiene buen conocimiento de los frameworks se va a tener en cuenta la comodidad a la hora de desarrollar con un framework u otro y la experiencia que se tenga de más a la hora de usar ruby on rails o sinatra.
+
+La elección finalmente ha sido el uso de la gema sinatra, ya que es mas ligera ejecutandose en la infraestructura y es más fácil de usar a la hora de desarrollar además de preferir programar con este framework.

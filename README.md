@@ -61,3 +61,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 [Fichero explicación de configuración circleci en el repo.](https://charlysm.github.io/ProyectoCC/doc/circleci)
 
 [Fichero explicación de workflow de testRuby en el repo.](https://charlysm.github.io/ProyectoCC/doc/actionsTest)
+
+## Justificación técnica del framework elegido para el microservicio.
+
+[Justificación técnica del framework elegido para el microservicio.](https://charlysm.github.io/ProyectoCC/doc/justificacionFramework)
