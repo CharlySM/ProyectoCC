@@ -6,4 +6,4 @@ El fichero de creación del nuevo workflow esta [aquí](https://github.com/Charl
 
 El contenido del fichero es este.
 
-![worekflow test](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/workflowTest.png)
+![worekflow test](./img/workflowTest.png)

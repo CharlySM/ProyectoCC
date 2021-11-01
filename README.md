@@ -9,27 +9,27 @@ Enlace para documentación de configuración de directorio: [Documentación](htt
 
 ## Descripción
 
-La descripción del proyecto viene dada en este [documento.](https://github.com/CharlySM/ProyectoCC/tree/master/doc/descripcion.md)
+La descripción del proyecto viene dada en este [documento.](https://charlysm.github.io/ProyectoCC/doc/descripcion.md)
 
 ## Arquitectura.
 
-En este [documento](https://github.com/CharlySM/ProyectoCC/tree/master/doc/arquitectura.md) podemos ver la arquitectura que se va a usar en el proyecto.
+En este [documento](https://charlysm.github.io/ProyectoCC/doc/arquitectura.md) podemos ver la arquitectura que se va a usar en el proyecto.
 
 ## Milestone e issues.
 
-En este apartado se describirá los milestone usados con los issues creados para cada milestone. Esto podemos verlo en el siguiente [documento.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/Milestone_e_issues.md)
+En este apartado se describirá los milestone usados con los issues creados para cada milestone. Esto podemos verlo en el siguiente [documento.](https://charlysm.github.io/ProyectoCC/doc/Milestone_e_issues.md)
 
 ## Herramientas usadas.
 
-En este apartado se va a describir que herramientas se van a usar. Esto viene descrito en ese [enlace.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/herramientas.md)
+En este apartado se va a describir que herramientas se van a usar. Esto viene descrito en ese [enlace.](https://charlysm.github.io/ProyectoCC/doc/herramientas.md)
 
 ## Historias de usuario.
 
-En este [enlace](https://github.com/CharlySM/ProyectoCC/blob/master/doc/hus.md) se muestran las historias de usuario.
+En este [enlace](https://charlysm.github.io/ProyectoCC/doc/hus.md) se muestran las historias de usuario.
 
 ## Planificación.
 
-En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/planificacion.md) podemos ver la planificación de las historias de usuario.
+En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion.md) podemos ver la planificación de las historias de usuario.
 
 ## Clases usadas.
 - Clase usuario, la cual se encuentra en el fichero [Usuario](https://github.com/CharlySM/ProyectoCC/blob/master/src/User.rb).
@@ -38,24 +38,24 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 
 ## Justificación Marco de pruebas, Biblioteca usada y elección de gestor de tareas.
 
-[Gestor de tareas.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionGestorTareas.md)
+[Gestor de tareas.](https://charlysm.github.io/ProyectoCC/doc/EleccionGestorTareas.md)
 
-[Marco de pruebas.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionMarcoPruebas.md)
+[Marco de pruebas.](https://charlysm.github.io/ProyectoCC/doc/EleccionMarcoPruebas.md)
 
-[Biblioteca usada.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/EleccionBiblioteca.md)
+[Biblioteca usada.](https://charlysm.github.io/ProyectoCC/doc/EleccionBiblioteca.md)
 
 ## Justificación elección contenedor docker.
 
-[Elección contenedor](https://github.com/CharlySM/ProyectoCC/blob/master/doc/eleccionContenedor.md)
+[Elección contenedor](https://charlysm.github.io/ProyectoCC/doc/eleccionContenedor.md)
 
 ## Registro en dockerhub y registro alternativo.
 
-[Registro imagen en dockerhub y github registry container.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/dockerHubRegistroAlternativo.md)
+[Registro imagen en dockerhub y github registry container.](https://charlysm.github.io/ProyectoCC/doc/dockerHubRegistroAlternativo.md)
 
 ## Integración continua.
 
-[Fichero explicación de configuración travis en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/travis.md)
+[Fichero explicación de configuración travis en el repo.](https://charlysm.github.io/ProyectoCC/doc/travis.md)
 
-[Fichero explicación de configuración circleci en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/circleci.md)
+[Fichero explicación de configuración circleci en el repo.](https://charlysm.github.io/ProyectoCC/doc/circleci.md)
 
-[Fichero explicación de workflow de testRuby en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/actionsTest.md)
+[Fichero explicación de workflow de testRuby en el repo.](https://charlysm.github.io/ProyectoCC/doc/actionsTest.md)

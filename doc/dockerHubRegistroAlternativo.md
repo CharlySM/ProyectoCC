@@ -4,17 +4,17 @@ Para usar dockerhub lo primero que tenemos que hacer es darnos de alta en docker
 
 Primero vamos a ver como se ha creado el action para actualizar docker y github registry container. En primer lugar hemos creado dos secret para poder conectar con dockerhub y un token para poder acceder a github registry container. Para ello nos dirigimos a nuestro repositorio, una vez en el repositorio nos dirigimos al apartado de settings del repo. Aqui nos dirigimos al apartado secret, después le damos a *New repository secret*.
 
-![secret Apartado](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/secretIndex.png)
+![secret Apartado](./img/secretIndex.png)
 
 Una vez aquí ponemos el nombre de nuestro secret y añadimos el valor del secret. Este valor no se podrá ver en ningún momento.
 
-![new secret](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/CreatingSecret.png)
+![new secret](./img/CreatingSecret.png)
 
 Los secret que creamos es uno con el nombre de usuario de dockerhub y otro con el password para acceder a dockerhub.
 
 Para crear el token de acceso personal nos vamos a la foto de nuestro perfil arriba a la izquierda, despues seleccionamos la opción settings, luego nos vamos a develop settings y por último nos dirigimos al apartado personal acces token. Seleccionamos generate new token.
 
-![new token](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/tokenGithub.png)
+![new token](./img/tokenGithub.png)
 
 Después nos vamos a una terminal al directorio de nuestro repo en nuestra máquina o sistema donde lo tengamos en local. Creamos una carpeta llamada **.github/workflows** con el comando ```mkdir -p .github/workflows```. En esta carpeta se guardarán todos los actions que creemos para nuestro repositorio.
 
