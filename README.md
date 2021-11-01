@@ -5,7 +5,7 @@
 # Spain Football Statistic
 Repositorio para la asignatura de Cloud Computing del curso 2020-2021 del máster de ingeniería informatica de la UGR.
 
-Enlace para documentación de configuración de directorio: [Documentación](https://github.com/CharlySM/ProyectoCC/blob/master/doc/inicializacion.md "configuración de repositorio")
+Enlace para documentación de configuración de directorio: [Documentación](https://github.com/CharlySM/ProyectoCC/inicializacion "configuración de repositorio")
 
 ## Descripción
 
