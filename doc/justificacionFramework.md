@@ -6,4 +6,4 @@ El conocimiento que tengo del uso de ruby on rails, esta justificado en un curso
 
 Para la elección como se tiene buen conocimiento de los frameworks se va a tener en cuenta la comodidad a la hora de desarrollar con un framework u otro y la experiencia que se tenga de más a la hora de usar ruby on rails o sinatra.
 
-La elección finalmente ha sido el uso de la gema sinatra, ya que es mas ligera ejecutandose en la infraestructura y es más fácil de usar a la hora de desarrollar además de preferir programar con este framework.
+La elección finalmente ha sido el uso de la gema sinatra, ya que es mas ligera ejecutandose en la infraestructura y es más fácil de usar a la hora de desarrollar además de preferir programar con este framework. 
