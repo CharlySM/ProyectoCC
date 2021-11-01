@@ -13,7 +13,7 @@ La descripción del proyecto viene dada en este [documento.](https://charlysm.gi
 
 ## Arquitectura.
 
-En este [documento](https://charlysm.github.io/ProyectoCC/doc/arquitectura.md) podemos ver la arquitectura que se va a usar en el proyecto.
+En este [documento](https://charlysm.github.io/ProyectoCC/doc/arquitectura) podemos ver la arquitectura que se va a usar en el proyecto.
 
 ## Milestone e issues.
 
