@@ -5,7 +5,7 @@
 # Spain Football Statistic
 Repositorio para la asignatura de Cloud Computing del curso 2020-2021 del máster de ingeniería informatica de la UGR.
 
-Enlace para documentación de configuración de directorio: [Documentación](https://github.com/CharlySM/ProyectoCC/doc "configuración de repositorio")
+Enlace para documentación de configuración de directorio: [Documentación](https://github.com/CharlySM/ProyectoCC/blob/master/doc/inicializacion.md "configuración de repositorio")
 
 ## Descripción
 
@@ -58,4 +58,4 @@ En este [documento](https://github.com/CharlySM/ProyectoCC/blob/master/doc/plani
 
 [Fichero explicación de configuración circleci en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/circleci.md)
 
-[Fichero explicación de workflow de testRuby en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/actionsTest.md) 
+[Fichero explicación de workflow de testRuby en el repo.](https://github.com/CharlySM/ProyectoCC/blob/master/doc/actionsTest.md)
