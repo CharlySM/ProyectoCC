@@ -1,3 +1,5 @@
+# Diseño en general del API.
+
 Para este proyecto se van a usar dos apis, la primera api esta desarrollada en lengueje ruby con la gema sinatra. Esto se ha hecho por que se tenia experiencia usando esta gema para hacer apis tanto en la asignatura de infraestructura virtual del grado de ingeniería informática de la Universidad de Granada como para proyectos personales. La segunda api se ha hecho en leguaje R, esto se ha elegido por que con esta api se pretende hacer un tratamiento de datos y devolverlos a la api desarrollada en ruby.
 
 Las apis se desarrollarán como microservicios independientes una de la otra, de forma que sean independientes una de la otra. El microservicio de la api desarrollada en ruby es una api con la que un usuario que usa nuestra api interactuará con ella. Para la api desarrollada en R, lo que hace es mandar datos tratados a la api desarrollada en ruby. El usuario no verá, ni conocerá de la existencia de la api desarrollada en R. Para la api desarrollada en R que se encarga de tratar datos y mandarlos cunado reciba una petición de la api de ruby, se podía haber elegido una api desarrollada en python, esto no se ha elegido ya que tengo más experiencia en tratamiento de datos con R, como hacer un modelo de redes neuronales para lanzar la petición de predicción del resultado de un partido que se quiere desarrollar.
@@ -32,3 +34,5 @@ Desglose de las rutas según las historias de usuario:
    * post '/equipoStatistics': Se utiliza un método post, manda una petición a la api de R para recibir datos, si los datos no los encuentra se manda una excepción al usuario, si los datos se reciben correctamente se rediríge a la ruta **Principal** y muestra la información al usuario.
 * [HU 3 - Consulta de comparación de estadísticas para dos equipos:](https://github.com/CharlySM/ProyectoCC/issues/13)
    * post '/manyStatistics': Se utiliza un método post, manda una petición a la api de R para recibir datos, si los datos no los encuentra se manda una excepción al usuario, si los datos se reciben correctamente se rediríge a la ruta **Principal** y muestra la información al usuario.
+
+El fichero de rutas se puede ver [aquí.](https://github.com/CharlySM/ProyectoCC/blob/master/index.rb)
