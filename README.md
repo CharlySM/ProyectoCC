@@ -65,3 +65,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Justificación técnica del framework elegido para el microservicio.
 
 [Justificación técnica del framework elegido para el microservicio.](https://charlysm.github.io/ProyectoCC/doc/justificacionFramework)
+
+## Diseño en general de API.
+
+[Diseño en general de API.](https://charlysm.github.io/ProyectoCC/doc/DocumentacionApi)
