@@ -10,9 +10,25 @@ Para la api desarrollada en Ruby se han creado una serie de rutas, acordando a l
 * Si la ruta anterior no ha podido guardar con exito los datos, te redirige a una nueva ruta que manda una excepción al usuario para conocer el error esta ruta se llama **registroErroneo**. Es una petición de tipo get.
 * La ruta **login**: Esta ruta te rediríge a un formulario para loguear al usuario en la aplicación. Es una petición de tipo get.
 * La ruta **logueando**: Es una ruta donde se hace una petición a una base de datos mongodb para comprobar el usuario que hace login. Si el usuario es correcto y existe le rediríge a la ruta **Principal**. Si el usuario no existe o tiene algún dato erróneo se rediríge a la ruta **loginErroneo**. Es una petición de tipo post.
-* La ruta **loginErronea**: Esta ruta muestra una excepción al usaurio de su acción de login errónea. Es una petición de tipo get.
+* La ruta **loginErroneo**: Esta ruta muestra una excepción al usaurio de su acción de login errónea. Es una petición de tipo get.
 * La ruta **Principal**: Esta ruta te rediríge a la página principal del usuario logueado. Esta petición es de tipo get.
 * La ruta **equipoStatistics**: Esta ruta manda una petición a la api de R para recibir los datos de las estadísticas solicitadas del equipo solicitado. Además hace una petición a una base de datos mongodb para guardar los datos de esta petición y el usuario que la mando. Esta petición es de tipo post.
 * La ruta **manyStatistics**: Esta ruta manda una petición a la api de R para recibir las estadísticas de los equipos solicitados y las estadísticas solicitadas. Además hace una petición a una base de datos mongodb para guardar los datos de esta petición y el usuario que la mando. Esta petición es de tipo post.
 
 Aunque ahora hay estas rutas se espera poder agregar más a lo largo del desarrollo de la api.
+
+Desglose de las rutas según las historias de usuario:
+
+* [HU 5 - Como usuario que quiere usar el sistema quiero poder registrarme en la aplicación:](https://github.com/CharlySM/ProyectoCC/issues/15)
+   * get '/registro': Se utiliza un método get, se muestra un formulario para poder registrar el usuario en la aplicación.
+   * post '/registrado': Se utiliza un método post, si el registro se ha hecho correctamente se rediríge a la página de la ruta raíz. Si el registro ha fallado se redirige a la ruta **registroErroneo** y devuelve una excepción con un mensaje al usuario.
+   * get '/registroErroneo': Se utiliza un método get, se devuelve una excepción con un mensaje para el usuario.
+* [HU 1 - Como usuario que quiere usar el sistema quiero poder hacer logging en la aplicación:](https://github.com/CharlySM/ProyectoCC/issues/11)
+   * post '/login': Se utiliza el método post, esto te redirige a una página que muestra un formulario para hacer login en la aplicación.
+   * post '/logueando': Se utiliza un metodo post, si el login se ha hecho correctamente se rediríge al usuario a la página principal de login, si el login ha fallado se rediríge a la ruta **loginErroneo** y se lanza una excepción mostrando un mensaje al usuario.
+   * get '/loginErroneo': Se utiliza el método get, se lanza una excepción mostrando un mensaje al usuario.
+   * get '/Principal': Se utiliza el método get, se redirige a la página principal del usuario.
+* [HU 2 - Consulta estadísticas para un equipo:](https://github.com/CharlySM/ProyectoCC/issues/12)
+   * post '/equipoStatistics': Se utiliza un método post, manda una petición a la api de R para recibir datos, si los datos no los encuentra se manda una excepción al usuario, si los datos se reciben correctamente se rediríge a la ruta **Principal** y muestra la información al usuario.
+* [HU 3 - Consulta de comparación de estadísticas para dos equipos:](https://github.com/CharlySM/ProyectoCC/issues/13)
+   * post '/manyStatistics': Se utiliza un método post, manda una petición a la api de R para recibir datos, si los datos no los encuentra se manda una excepción al usuario, si los datos se reciben correctamente se rediríge a la ruta **Principal** y muestra la información al usuario.
