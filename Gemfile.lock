@@ -12,6 +12,8 @@ GEM
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rake (13.0.6)
     ruby2_keywords (0.0.5)
     sinatra (2.1.0)
@@ -31,6 +33,7 @@ DEPENDENCIES
   io-console
   json
   mongo (= 2.16.0)
+  rack-test (~> 1.1)
   rake
   sinatra
   test-unit
