@@ -36,8 +36,10 @@ def test_registroErroneo
 end
 
 def test_login
-  get '/login'
-  assert_equal expectedLogin, last_response.body
+  browser = Rack::Test::Session.new(Rack::MockSession.new(app))
+  browser.stub(:post, "") do
+    assert_equal "", browser.post('/login')
+  end
 end
 
 def test_loginCorrecto

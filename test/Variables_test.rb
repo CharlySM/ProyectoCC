@@ -79,29 +79,6 @@ end
 
 $expectedRegistroErroneo="Email erroneo o nombre usuario repetido"
 
-$expectedLogin="<!DOCTYPE html>
-<html>
-<head>
-  <style type=\"text/css\">
-  body { text-align:center;font-family:helvetica,arial;font-size:22px;
-    color:#888;margin:20px}
-  #c {margin:0 auto;width:500px;text-align:left}
-  </style>
-</head>
-<body>
-  <h2>Sinatra doesn’t know this ditty.</h2>
-  <img src='http://example.org/__sinatra__/404.png'>
-  <div id=\"c\">
-    Try this:
-    <pre>get &#x27;&#x2F;login&#x27; do
-  &quot;Hello World&quot;
-end
-</pre>
-  </div>
-</body>
-</html>
-"
-
 $expectedLoginErroneo="Email erroneo o password erronea"
 
 $expectedPrincipal="<!DOCTYPE html>\r
@@ -152,10 +129,6 @@ end
 
 def expectedRegistroErroneo
   $expectedRegistroErroneo
-end
-
-def expectedLogin
-  $expectedLogin
 end
 
 def expectedLoginErroneo
