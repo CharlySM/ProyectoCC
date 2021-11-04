@@ -4,6 +4,7 @@ GEM
     bson (4.12.1)
     io-console (0.5.9)
     json (2.6.0)
+    minitest (5.14.4)
     mongo (2.16.0)
       bson (>= 4.8.2, < 5.0.0)
     mustermann (1.1.1)
@@ -32,6 +33,7 @@ PLATFORMS
 DEPENDENCIES
   io-console
   json
+  minitest
   mongo (= 2.16.0)
   rack-test (~> 1.1)
   rake
