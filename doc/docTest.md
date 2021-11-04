@@ -29,3 +29,6 @@ Se han realizado test para las peticiones creadas hasta el momento para la api.
 Los test de las rutas lo podemos encontrar en el fichero [Routes_test](https://github.com/CharlySM/ProyectoCC/blob/master/test/Routes_test.rb).
 
 Los test de las rutas se ejecutan con la tarea creada en el fichero gestor de tareas [Rakefile](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile), para ejecutar los test con el comando ```rake test```
+
+**Referencias.**
+[Testing sinatra.](http://sinatrarb.com/testing.html)
