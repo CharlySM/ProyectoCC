@@ -69,3 +69,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Diseño en general de API.
 
 [Diseño en general de API.](https://charlysm.github.io/ProyectoCC/doc/DocumentacionApi)
+
+## Realización de test.
+
+[Realización de test.](https://charlysm.github.io/ProyectoCC/doc/docTest)
