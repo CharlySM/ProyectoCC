@@ -9,7 +9,7 @@ require './src/Equipo'
 set :bind, "0.0.0.0"
 set :port, 80
 
-client = Mongo::Client.new('mongodb://127.0.0.1:27017/test', :server_selection_timeout => 2)
+client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 collection = client["users"]
 request = client["request"]
 @data=" "
