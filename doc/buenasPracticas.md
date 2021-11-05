@@ -74,6 +74,6 @@ before {
 ´´´
 
 Referencias.
- 
+
 [Logs ruby.](https://spin.atomicobject.com/2013/11/12/production-logging-sinatra/)
 [Servicio etcd.](https://computingforgeeks.com/how-to-install-etcd-on-ubuntu-18-04-ubuntu-16-04/)
