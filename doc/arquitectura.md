@@ -1,3 +1,8 @@
+---
+layout: default
+title: Arquitectura
+---
+
 La arquitectura que se va a usar para el proyecto es la arquitectura de microservicios. Donde habrá tres microservicios:
 
 1. Un microservicio entrenará un modelo para hacer las predicciones.
@@ -16,4 +21,4 @@ Como se ha descrito antes en la app va a haber 3 microservicios.
 
 ### Diagrama de arquitectura de la aplicación.
 
-![diagrama](https://github.com/CharlySM/ProyectoCC/blob/master/doc/img/diagrama.png)
+![diagrama](./img/diagrama.png)

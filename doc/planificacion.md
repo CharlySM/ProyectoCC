@@ -1,3 +1,8 @@
+---
+layout: default
+title: Planificación
+---
+
 En este documento vamos a ver la planificación de las historias de usuario creadas, en que orden se van a realizar y a que hito se las ha asignado.
 
 En primer lugar en el [hito 2](https://github.com/CharlySM/ProyectoCC/milestone/4) se ha asignado las historias de usuario [HU-5](https://github.com/CharlySM/ProyectoCC/issues/15) y la historia [HU-1](https://github.com/CharlySM/ProyectoCC/issues/11). En primer lugar se realizara la [HU-5](https://github.com/CharlySM/ProyectoCC/issues/15) ya que esta historia no tiene ninguna dependencia, en esta historia de usuario se desarrollará el registro de usuarios en la aplicación. Después se realizará la [HU-1](https://github.com/CharlySM/ProyectoCC/issues/11), en esta historia de usuario se desarrollará el loggin de los usuarios en la aplicación esta historia tiene dependencia de la [HU-5](https://github.com/CharlySM/ProyectoCC/issues/15), por lo que esta de desarrolla después y a su vez el resto de historias de usuario dependen de [HU-1](https://github.com/CharlySM/ProyectoCC/issues/11).

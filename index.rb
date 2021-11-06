@@ -5,6 +5,7 @@ require 'json'
 require './src/User'
 require './src/Utils'
 require './src/Equipo'
+require 'logger'
 
 set :bind, "0.0.0.0"
 set :port, 80
@@ -16,7 +17,6 @@ request = client["request"]
 $user=
 
 Utils=Utils.instance
-
 get '/' do
   erb :index
 end

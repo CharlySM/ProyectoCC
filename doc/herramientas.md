@@ -1,3 +1,8 @@
+---
+layout: default
+title: Herramientas
+---
+
 Para este proyecto se van a usar varias herramientas distintas, en los siguientes apartadas las vamos a describir.
 
 ### Lenguaje.

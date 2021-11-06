@@ -1,9 +1,14 @@
+---
+layout: default
+title: Historias de usuario
+---
+
 En este documento se recogen las historias de usuario que se han definido inicialmente para la realización de este proyecto. Las historias de usuario se van a ordenar según se han asignado a los hitos y también se pondrán las tareas asignadas a cada historia de usuario.
 Ejemplo:
 - Milestone:
    - Historia usuario:
        - Tareas
- 
+
 - [Milestone 2](https://github.com/CharlySM/ProyectoCC/milestone/4)
    - [[HU-5] Registro de usuario](https://github.com/CharlySM/ProyectoCC/issues/15)
        - [Creación usuarios](https://github.com/CharlySM/ProyectoCC/issues/18)

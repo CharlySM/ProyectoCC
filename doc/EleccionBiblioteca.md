@@ -1,3 +1,8 @@
+---
+layout: default
+title: Elección de biblioteca
+---
+
 Para la elección de la biblioteca para realizar los test primero he investigado las posibilidades que tenemos para el lenguaje ruby. Las bibliotecas mas usadas tienen relación también con el marco de pruebas que se va a usar. Las opciones que tenemos son Rspec y la clase Test::unit:test_Case de ruby. Estos dos framework son los mas usados.
 
 Para elegir nuestra libreria tenemos que hablar de estos dos frameworks ya que usan librerías distintas para testear. En primer lugar voy a hablar de del framework Test:unit::test_Case, que usa la librería de assert y se hacen los tests dentro de una clase. Este framework es aconsejable para aquellos programadores mas familiarizados con los lenguajes tradicionales como c++ o java. Además en el proyecto de la asignatura de IV del grado de informática de la universidad de granada se usó este framework por lo que se dispone de cierta familiaridad con este framework y su librería de assert.
