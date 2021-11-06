@@ -67,11 +67,11 @@ end
 
 Ahora añadimos unas lineas para que se asigne los logs emitidos por sinatra en consola en la variable de nuestro método esto lo escribirá en los ficheros correspondientes, la asignación se hace antes de que se ejecute nada de nuestra aplciación.
 
-´´´
+```
 before {
   env["rack.errors"] =  error_logger
 }
-´´´
+```
 
 Referencias.
 
