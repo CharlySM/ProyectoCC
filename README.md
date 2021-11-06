@@ -73,3 +73,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Realización de test.
 
 [Realización de test.](https://charlysm.github.io/ProyectoCC/doc/docTest)
+
+## uso de buenas prácticas.
+
+[configuración distribuida, logs.](https://charlysm.github.io/ProyectoCC/doc/buenasPracticas)
