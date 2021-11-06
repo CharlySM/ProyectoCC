@@ -21,7 +21,7 @@ etcdctl member list
 ```
  Mostramos la ejecución de los comandos lanzados anteriormente.
 
- ![salida etcd](./img/salidaEtcd.PNG)
+ ![salida etcd](./img/salidaEtcd.png)
 
  Realizamos el export para que funcione correctamente el cliente.
 
