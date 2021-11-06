@@ -35,9 +35,9 @@ Creamos el puerto para nuestra aplicación.
 etcdctl put SinatraPort 80
 ```
 
-Ahora cargamos el servicio en nuestra api, como se usa ruby instalamos la gema etcdv3, y lo añadimos como se ve el fichero [index.rb](https://github.com/CharlySM/ProyectoCC/blob/master/index.rb).
+Ahora cargamos el servicio en nuestra api, como se usa ruby instalamos la gema etcdv3, y lo añadimos como se ve el fichero [index.rb](https://github.com/CharlySM/ProyectoCC/blob/master/config.ru).
 
-Para los loggin de nuestra aplicación vamos a usar el método que nos provée nuestra biblioteca de sinatra para poder escribir los logs. Este método es **Rack::CommonLogger**. Esta configuración del método se puede hacer tanto en un fichero config.ru como en el fichero de nuestra app sinatra. En mi caso lo he puesto en el fichero de la app sinatra.
+Para los loggin de nuestra aplicación vamos a usar el método que nos provée nuestra biblioteca de sinatra para poder escribir los logs. Este método es **Rack::CommonLogger**. Esta configuración del método se puede hacer tanto en un fichero config.ru como en el fichero de nuestra app sinatra. En mi caso lo he puesto en el fichero config.ru.
 
 Primero cargamos el metodo con la linea:
 
