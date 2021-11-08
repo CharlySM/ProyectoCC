@@ -8,7 +8,7 @@ require './src/Equipo'
 require 'logger'
 
 set :bind, "0.0.0.0"
-set :port, 80
+set :port, 3456
 
 client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 collection = client["users"]

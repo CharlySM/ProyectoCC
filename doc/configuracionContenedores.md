@@ -1,0 +1,5 @@
+# Documentación y justificación de la configuración de cada uno de los contenedores que lo componen.
+
+En este apartado vamos a ver la configuración de los contenedores que componen nuestro cluster.
+
+En primer lugar vamos a hablar del contenedor de nuestro microservcio de ruby. Se ha desplegado sobre una imagen alpine con ruby isntalado, la imagen es **ruby:3.0.2-alpine3.14**. Se han instalado las gemas que contiene el fichero [dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/sinatra.Dockerfile). Este microservcio se encarga de mandar peticiones a la api de R para recibir la información solicitada, después muestra los datos obtenidos. Se ha añadido una modificación para la ejecución de la aplicación con respecto a la entrega anterior, se ha cambiado el fichero Rakefile para ejecutar la aplicación con el comando ```ruby ficheroAppSinatra```. [Fichero Rakefile.](https://github.com/CharlySM/ProyectoCC/blob/master/Rakefile)

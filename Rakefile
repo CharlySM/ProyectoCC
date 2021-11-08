@@ -8,5 +8,5 @@ task :test do
 end
 
 task :exec do
-  sh "rackup config.ru"
+  ruby "index.rb"
 end

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  sinatra:
+    container_name: sinatraApp
+    build:
+      context: .
+      dockerfile: sinatra.Dockerfile
+    ports:
+         - "80:3456"
