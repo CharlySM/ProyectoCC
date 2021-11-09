@@ -1,6 +1,25 @@
 version: '3'
 
 services:
+  mymongo:
+    image: mongo:3.2
+    container_name: mymongo
+    restart: unless-stopped
+    #command: bash -c "mongo --eval \"test.createCollection(\'users\')\""
+    environment:
+      MONGODB_USER: charly
+      MONGODB_PASS: charlypass
+      MONGO_INITDB_ROOT_USERNAME: charly
+      MONGO_INITDB_ROOT_PASSWORD: charlypass
+      MONGODB_DATABASE: test
+      MONGODB_PORT_NUMBER: 27017
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    networks:
+      - basedata
+
   sinatra:
     container_name: sinatraApp
     build:
@@ -8,3 +27,9 @@ services:
       dockerfile: sinatra.Dockerfile
     ports:
          - "80:3456"
+    networks:
+      - basedata
+
+networks:
+  basedata:
+    driver: bridge

@@ -77,3 +77,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## uso de buenas prácticas.
 
 [configuración distribuida, logs.](https://charlysm.github.io/ProyectoCC/doc/buenasPracticas)
+
+## Configuración de cluster.
+
+[Documentación y justificación de la estructura del clúster.](https://charlysm.github.io/ProyectoCC/doc/estructuraCluster)
