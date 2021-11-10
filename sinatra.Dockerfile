@@ -26,7 +26,7 @@ COPY --chown=charlysm:sinatra ["views", "./views"]
 COPY --chown=charlysm:sinatra ["src", "./src"]
 COPY --chown=charlysm:sinatra ["public", "./public"]
 
-#Instalamos las gemas que usamos y borramos fichero de gemas
+#Instalamos las gemas que usamos
 RUN bundle install
 
 #Añadimos comando de ejecucion de test

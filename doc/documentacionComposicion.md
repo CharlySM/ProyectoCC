@@ -1,0 +1,11 @@
+Para el fichero de composición se han creado 3 contenedores, uno para la api de R, uno para la api de Ruby y otro para la base de datos en mongodb. También se han creado dos redes una para la conexión de la base de datos con las apis y otra para la conexión de las apis entre sí.
+
+Para crear el contenedor de la base de datos se ha creado directamente desde el fichero docker-compose, poniendo el nombre de la imagen que vamos a usar para nuestra base de datos de mongo. La base de datos de mongo se ha desplegado sobre el puerto 27017 interno y para el externo también se ha usado este puerto. Se ha creado un usuario para poder acceder a la base de datos. También se ha añadido un volumen a este contenedor llamado data/db. Se ha añadido a este contenedor la red basedata para poder conectar las apis con la base de datos. Se le ha puesto el nombre al contenedor de mymongo.
+
+El segundo contenedor creado ha sido el contenedor para la api de ruby con sinatra. Para crear este contenedor se ha usado el fichero [sinatra.Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/sinatra.Dockerfile). Este contenedor se ha desplegado por el puerto interno 3456 y por el puerto externo 80. Se han añadido las redes basedata para poder conectar con el contenedor de la base de datos y también se ha añadido la red apis para poder conectar con el contenedor de la api de R. Se le ha puesto el nombre al contenedor de sinatraApp.
+
+En el tercer contenedor creado se ha creado la api de R con plumber. Para crear este contenedor se ha usado el fichero [rplumber.Dockerfile](https://github.com/CharlySM/ProyectoCC/blob/master/rplumber.Dockerfile). Este contenedor se ha desplegado por el puerto interno 8000 y por el mismo puerto externo. Se le han añadido las redes basedata para poder conectar con el contenedor de la base de datos y la red apis para poder conectar con el contendedor de la api de ruby sinatra. Se le ha puesto el nombre de rapi.
+
+Se han añadido dos redes a en el fichero docker-compose. Las redes tienen el nombre de basedata, donde esta red nos permitirá conectar las apis a la base de datos, la red con nombre apis que nos permitirá conectar las apis entre sí. Las dos redes se han creado con el driver bridge.
+
+El fichero descrito se puede ver en el fichero [docker-compose.](https://github.com/CharlySM/ProyectoCC/blob/master/docker-compose.yml)
