@@ -81,3 +81,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Configuración de cluster.
 
 [Documentación y justificación de la estructura del clúster.](https://charlysm.github.io/ProyectoCC/doc/estructuraCluster)
+
+## Configuración de contenedores.
+
+[documentación y justificación de la configuración de cada uno de los contenedores.](https://charlysm.github.io/ProyectoCC/doc/configuracionContenedores)
