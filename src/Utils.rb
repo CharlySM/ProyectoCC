@@ -1,4 +1,5 @@
 require 'singleton'
+require "httparty"
 
 class Utils
 
@@ -23,13 +24,15 @@ class Utils
       return esta
   end
 
-  def getJson(file)
-     map={}
-     if File.file?(file)
-       map=JSON.parse(IO.read(file))
-     end
+  def getJson(team)
+     map = HTTParty.get("http://rapi:8000/#{team}")
      return map
    end
+
+   def getJson2(teams)
+      map = HTTParty.get("http://rapi:8000/#{teams}")
+      return map
+    end
 
    def searchEmail(key, email, users)
        user=nil

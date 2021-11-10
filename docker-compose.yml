@@ -5,7 +5,6 @@ services:
     image: mongo:3.2
     container_name: mymongo
     restart: unless-stopped
-    #command: bash -c "mongo --eval \"test.createCollection(\'users\')\""
     environment:
       MONGODB_USER: charly
       MONGODB_PASS: charlypass
@@ -29,7 +28,21 @@ services:
          - "80:3456"
     networks:
       - basedata
+      - apis
+
+  rapi:
+    container_name: rapi
+    build:
+      context: .
+      dockerfile: rplumber.Dockerfile
+    ports:
+         - "8000:8000"
+    networks:
+      - basedata
+      - apis
 
 networks:
   basedata:
+    driver: bridge
+  apis:
     driver: bridge

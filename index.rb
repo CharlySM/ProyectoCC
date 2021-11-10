@@ -11,6 +11,8 @@ set :bind, "0.0.0.0"
 set :port, 3456
 
 client = Mongo::Client.new('mongodb://charly:charlypass@mymongo:27017/test?authSource=admin&retryWrites=true&w=majority&ssl=false')
+#client = Mongo::Client.new('mongodb://localhost:27017/test')
+
 database = Mongo::Database.new(client, 'test')
 if !database.collection_names.include? "users"
   collectionAux = Mongo::Collection.new(database, 'users')
@@ -63,7 +65,6 @@ post '/logueando' do
   aux=Utils.searchEmail("email", params[:email], Utils.getCollection(collection))
   estaEmail=Utils.searchIntoJson("email", params[:email], Utils.getCollection(collection))
   estaPass=Utils.searchIntoJson("password", params[:password], Utils.getCollection(collection))
-  puts aux
   if estaEmail and estaPass
     $user=User.new(aux["name"], aux["email"], aux["password"], aux["userName"])
     valid=$user.valid_email? ? true : false
@@ -90,7 +91,7 @@ post '/equipoStatistics' do
   n=request.count
   doc={_id:"#{n+1}","tipoRequest":"#{params[:tipoRequest]}","name":"#{$user.name}","email":"#{$user.email}","equipo1":"#{params[:equipo]}"}
   request.insert_one(doc)
-  @data = Equipo.new(Utils.getJson("./jsonTest/equipo.json")["equipo"]).statisticToJson
+  @data = Utils.getJson("team?team=#{params[:equipo]}")
   erb :principal
 end
 
@@ -98,11 +99,8 @@ post '/manyStatistics' do
   n=request.count
   doc={_id:"#{n+1}","tipoRequest":"#{params[:tipoRequest]}","name":"#{$user.name}","email":"#{$user.email}","equipo1":"#{params[:equipo1]}","equipo2":"#{params[:equipo2]}"}
   request.insert_one(doc)
-  equipos=Utils.getJson("./jsonTest/prueba2.json")
-  aux=""
-  equipos.map do |k,v|
-    aux=aux+"#{k}:<br>"+"#{Equipo.new(v).statisticToJson}<br>"
-  end
+  equipos=Utils.getJson2("manyTeams?team1=#{params[:equipo1]}&team2=#{params[:equipo2]}")
+  aux="<br>"+"#{equipos}<br>"
   @data=aux
   erb :principal
 end
