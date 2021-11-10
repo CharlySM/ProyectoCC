@@ -24,7 +24,7 @@ RUN chmod -R 777 ./index.rb
 RUN chmod -R 777 ./Rakefile
 COPY --chown=charlysm:sinatra ["views", "./views"]
 COPY --chown=charlysm:sinatra ["src", "./src"]
-COPY --chown=charlysm:sinatra ["public", "./public"]
+#COPY --chown=charlysm:sinatra ["public", "./public"]
 
 #Instalamos las gemas que usamos
 RUN bundle install
