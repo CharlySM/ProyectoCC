@@ -84,4 +84,8 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 
 ## Configuración de contenedores.
 
-[documentación y justificación de la configuración de cada uno de los contenedores.](https://charlysm.github.io/ProyectoCC/doc/configuracionContenedores)
+[Documentación y justificación de la configuración de cada uno de los contenedores.](https://charlysm.github.io/ProyectoCC/doc/configuracionContenedores)
+
+## Documentación fichero composición.
+
+[Documentación del fichero de composición.](https://charlysm.github.io/ProyectoCC/doc/documentacionComposicion)
