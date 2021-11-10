@@ -11,7 +11,6 @@ set :bind, "0.0.0.0"
 set :port, 3456
 
 client = Mongo::Client.new('mongodb://charly:charlypass@mymongo:27017/test?authSource=admin&retryWrites=true&w=majority&ssl=false')
-#client = Mongo::Client.new('mongodb://localhost:27017/test')
 
 database = Mongo::Database.new(client, 'test')
 if !database.collection_names.include? "users"
