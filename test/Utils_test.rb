@@ -18,14 +18,6 @@ class TestUtils < Test::Unit::TestCase
     assert_equal(esperado, salida)
   end
 
-  def test_getJson
-    esperado={"key1"=>"value1", "key2"=>"value2","key3"=>{"key31"=>"value31","key32"=>"value32"}}
-
-    salida=Utils.getJson("./test/resources/prueba.json")
-
-    assert_equal(esperado, salida)
-  end
-
   def test_searchEmail
     map=[{"key"=>"value1", "key2"=>"value2"},
       {"key3"=>"value3", "key4"=>"value4"}
