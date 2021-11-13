@@ -27,6 +27,8 @@ services:
       dockerfile: sinatra.Dockerfile
     ports:
          - "80:3456"
+    volumes:
+      - ./:/app/
     environment:
       MONGODB_USER: charly
       MONGODB_PASS: charlypass
