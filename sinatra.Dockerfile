@@ -22,7 +22,7 @@ COPY --chown=charlysm:sinatra ["index.rb", "Gemfile", "Rakefile", "Gemfile.lock"
 RUN chmod -R 777 ./Gemfile.lock
 RUN chmod -R 777 ./index.rb
 RUN chmod -R 777 ./Rakefile
-RUN chmod +w /home/charlysm
+RUN chmod -R 777 /home/charlysm
 COPY --chown=charlysm:sinatra ["views", "./views"]
 COPY --chown=charlysm:sinatra ["src", "./src"]
 #COPY --chown=charlysm:sinatra ["public", "./public"]
