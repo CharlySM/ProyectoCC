@@ -12,6 +12,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: charlypass
       MONGODB_DATABASE: test
       MONGODB_PORT_NUMBER: 27017
+      MONGODB_CONTAINER: mymongo
     ports:
       - "27017:27017"
     volumes:
@@ -26,6 +27,14 @@ services:
       dockerfile: sinatra.Dockerfile
     ports:
          - "80:3456"
+    environment:
+      MONGODB_USER: charly
+      MONGODB_PASS: charlypass
+      MONGODB_DATABASE: test
+      MONGODB_PORT_NUMBER: 27017
+      MONGODB_CONTAINER: mymongo
+      RAPI_URL: rapi
+      RAPI_PORT: 8000
     networks:
       - basedata
       - apis

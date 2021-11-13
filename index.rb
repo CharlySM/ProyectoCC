@@ -10,7 +10,7 @@ require 'logger'
 set :bind, "0.0.0.0"
 set :port, 3456
 
-client = Mongo::Client.new('mongodb://charly:charlypass@mymongo:27017/test?authSource=admin&retryWrites=true&w=majority&ssl=false')
+client = Mongo::Client.new("mongodb://#{ENV["MONGODB_USER"]}:#{ENV["MONGODB_PASS"]}@#{ENV["MONGODB_CONTAINER"]}:#{ENV["MONGODB_PORT_NUMBER"]}/#{ENV["MONGODB_DATABASE"]}?authSource=admin&retryWrites=true&w=majority&ssl=false")
 
 database = Mongo::Database.new(client, 'test')
 if !database.collection_names.include? "users"

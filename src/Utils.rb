@@ -25,12 +25,12 @@ class Utils
   end
 
   def getJson(team)
-     map = HTTParty.get("http://rapi:8000/#{team}")
+     map = HTTParty.get("http://#{ENV["RAPI_URL"]}:#{ENV["RAPI_PORT"]}/#{team}")
      return map
    end
 
    def getJson2(teams)
-      map = HTTParty.get("http://rapi:8000/#{teams}")
+      map = HTTParty.get("http://#{ENV["RAPI_URL"]}:#{ENV["RAPI_PORT"]}/#{teams}")
       return map
     end
 
