@@ -89,3 +89,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Documentación fichero composición.
 
 [Documentación del fichero de composición.](https://charlysm.github.io/ProyectoCC/doc/documentacionComposicion)
+
+## Testeo composición.
+
+[Testeo composicion](https://charlysm.github.io/ProyectoCC/doc/testeoComposicion)
