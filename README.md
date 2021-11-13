@@ -93,3 +93,7 @@ En este [documento](https://charlysm.github.io/ProyectoCC/doc/planificacion) pod
 ## Testeo composición.
 
 [Testeo composicion](https://charlysm.github.io/ProyectoCC/doc/testeoComposicion)
+
+## Fichero despliegue.
+
+[Despliegue.](https://charlysm.github.io/ProyectoCC/doc/docDespliegue)
