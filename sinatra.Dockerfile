@@ -23,7 +23,7 @@ COPY  ["index.rb", "Gemfile", "Rakefile", "Gemfile.lock", "./"]
 RUN chmod -R 777 ./Gemfile.lock
 RUN chmod -R 777 ./index.rb
 RUN chmod -R 777 ./Rakefile
-RUN chmod -R 777 /home/charlysm
+#RUN chmod -R 777 /home/charlysm
 COPY ["views", "./views"]
 COPY ["src", "./src"]
 #COPY ["public", "./public"]
